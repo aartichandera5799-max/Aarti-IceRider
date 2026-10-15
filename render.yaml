@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: icerider
+    runtime: python
+    plan: free
+    buildCommand: "python -m compileall -q ."
+    startCommand: "python server.py"
